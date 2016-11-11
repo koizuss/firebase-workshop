@@ -14,10 +14,9 @@ TODOアプリの基本機能でFirebaseの基本的なデータI/O、セキュ�
 1. [ログイン](1-1_LOGIN.md)
   - Googleアカウントでソーシャルログイン（認証連携）
   - https://speakerdeck.com/heki1224/firebase-authentication
-2. [TODOの追加・変更・削除](1-2_CREATE_TASK.md)
-3. [TODOの表示](1-3_SHOW_TASK.md)
-4. [完了チェック](1-4_COMPLETE.md)
-5. [セキュリティ設定・デプロイ](1-5_SET_SEC.md)
+2. [タスク表示・追加・変更・削除](1-2_TASK.md)
+3. [完了チェック](1-3_COMPLETE.md)
+4. [セキュリティ設定・デプロイ](1-4_DEPLOY.md)
 
 ### Ph-2 グループ
 
