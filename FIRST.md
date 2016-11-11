@@ -28,6 +28,7 @@ Firebaseの基本を知ってまずは *"使い始める"* ことができるよ
   1. (m)BaaSってなに？
     - http://e-words.jp/w/BaaS.html
   1. Firebaseってなに？
+    - http://qiita.com/kohashi/items/43ea22f61ade45972881
     - Googleが提供するサービス
       - 高品質のセキュリティー・パフォーマンス
       - Analytics技術との連携によるデジタルマーケティング
