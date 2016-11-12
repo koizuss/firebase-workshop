@@ -32,8 +32,10 @@ Firebase tools: Firebaseを操作するためのCLIツール
 
 - https://firebase.google.com/docs/cli/?hl=ja
 
-  npm i -D firebase-tools
-  $(npm bin)/firebase --help
+```
+npm i -D firebase-tools
+$(npm bin)/firebase --help
+```
 
 ### Firebase tools でログイン
 
@@ -43,7 +45,9 @@ Firebase tools: Firebaseを操作するためのCLIツール
 
 ローカルディレクトリをデプロイ用に初期化
 
-  $(npm bin)/firebase init
+```
+$(npm bin)/firebase init
+```
 
 1. `Hosting: Configure and deploy Firebase Hosting sites` を選択
 1. 今回作成したFirebaseプロジェクト名を選択
@@ -56,7 +60,7 @@ Firebase tools: Firebaseを操作するためのCLIツール
 - database.rules.json
   - データベースルールファイル
   - 今後は基本このファイルを編集してデプロイする流れ
-  - *間違うとルールが全部消えるとかあるので注意* （後述）
+  - **間違うとルールが全部消えるとかあるので注意** （後述）
   - セキュリティホールになりかねないのでパブリックなリポジトリでは公開しない方が吉
 - firebase.json
   - プロジェクトディレクトリの設定ファイル
@@ -86,7 +90,7 @@ webpackの設定を変更
 
 #### ※※※デプロイ時の注意！！！
 
-上記 `firebase deploy` コマンドはローカルの `./database.rules.json` でクラウド上のルールを *問答無用で上書き* します。
+上記 `firebase deploy` コマンドはローカルの `./database.rules.json` でクラウド上のルールを **問答無用で上書き** します。
 データベースルールはセキュリティリスクがかなり高いです（とゆーかデータを守る唯一の手段です）。
 ローカルファイルが間違った状態で知らずに上がってしまったみたいなケースは十分に注意してください。
 
@@ -94,7 +98,9 @@ webpackの設定を変更
 
 デプロイはコマンドオプションでデータベースルール反映をスキップできます。
 
-  $(npm bin)/firebase deploy --only Hosting  # Hosting資材のみデプロイ
+```
+$(npm bin)/firebase deploy --only Hosting  # Hosting資材のみデプロイ
+```
 
 デプロイは↑のみで対応し、ルールはコンソールでしか変更しない運用とかもありです。
 （間違ってオプション無しで叩かないよう、CIツールでデプロイする等の検討が必要）
