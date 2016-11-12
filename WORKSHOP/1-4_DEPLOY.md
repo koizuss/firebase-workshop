@@ -53,7 +53,9 @@ $(npm bin)/firebase --help
 
 ### Firebase tools でログイン
 
-  $(npm bin)/firebase login
+```
+$(npm bin)/firebase login
+```
 
 ### プロジェクトディレクトリを初期化
 
@@ -90,17 +92,21 @@ webpackの設定を変更
 
 ### ビルド
 
-  npm run build
+```
+npm run build
+```
 
 - `plublic/` に各種ファイルが出力されていることを確認
 
 ### デプロイ
 
-  $(npm bin)/firebase deploy
+```
+$(npm bin)/firebase deploy
+```
 
 コンソールに表示される `Hosting URL` にアクセスすると作成したアプリが使える（はず）
 
-*お疲れ様でした！！*
+**お疲れ様でした！！**
 
 #### ※※※デプロイ時の注意！！！
 
