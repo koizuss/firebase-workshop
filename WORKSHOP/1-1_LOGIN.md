@@ -1,6 +1,9 @@
 ログイン
 ===================
 
+https://github.com/koizuss/firebase-todo/compare/0-3_SETUP_FIREBASE...1-1_LOGIN
+
+
 - Googleアカウントでソーシャルログイン（認証連携）
 - https://speakerdeck.com/heki1224/firebase-authentication
 
