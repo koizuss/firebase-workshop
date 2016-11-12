@@ -79,7 +79,7 @@ TODOアプリの基本機能でFirebaseの基本的なデータI/O、セキュ�
 
 ### Repository
 
-<URL>
+https://github.com/koizuss/firebase-todo
 
 - ↑はforkしてcloneして使ってください
 
