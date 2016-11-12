@@ -26,3 +26,5 @@ npm i -S firebase
       - init_firebase.js は `git ignore` しています
     - 環境の切り替えができるように
 1. app.js にインポート
+
+https://github.com/koizuss/firebase-todo/compare/master...0-3_SETUP_FIREBASE
