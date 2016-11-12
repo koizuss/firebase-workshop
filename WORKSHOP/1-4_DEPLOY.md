@@ -24,6 +24,20 @@
 - デフォルトでは認証していれば誰でもreadできる設定になっている
 - readは登録した本人しか見れない仕様にする
 
+```
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null",
+    "task": {
+      "$userId": {
+        ".read": "auth.uid === $userId"
+      }
+    }
+  }
+}
+```
+
 ## デプロイ
 
 ### Firebase tools インストール
