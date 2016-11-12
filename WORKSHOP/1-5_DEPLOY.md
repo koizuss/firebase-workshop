@@ -1,46 +1,7 @@
-セキュリティ設定・デプロイ
+デプロイ
 ==================
 
-## セキュリティ(データの検証)設定
-
-### 仕様確認
-  - https://firebase.google.com/docs/database/security/
-  - ![sec](../images/sec.png)
-  - デフォルトで認証済ユーザーのみ許可
-  - 各要素毎に指定可能
-    - JavaScriptで条件を指定、結果が true:許可/false:拒否
-    - 条件判定コード内で以下のデータが参照可能
-      - 認証ユーザーを参照可能: auth
-      - 反映データ（新/旧）を参照可能: newData / data
-      - パスに含まれた値（keyなど）を参照可能: `$` を付けて変数として定義
-      - データベースに格納されたその他のデータを参照可能
-      - 他にも
-        - https://firebase.google.com/docs/database/security/securing-data
-  - その他セキュリティのドキュメントはデータの構造を決める参考になる
-    - https://firebase.google.com/docs/database/security/user-security
-
-### セキュリティ設定
-
-- デフォルトでは認証していれば誰でもタスクデータを参照できる設定になっている
-- タスクデータは登録した本人しか見れない仕様にする
-
-```
-{
-  "rules": {
-    ".read": "auth != null",
-    ".write": "auth != null",
-    "task": {
-      "$userId": {
-        ".read": "auth.uid === $userId"
-      }
-    }
-  }
-}
-```
-
-## デプロイ
-
-### Firebase tools インストール
+## Firebase tools インストール
 
 Firebase tools: Firebaseを操作するためのCLIツール
 
@@ -51,13 +12,13 @@ npm i -D firebase-tools
 $(npm bin)/firebase --help
 ```
 
-### Firebase tools でログイン
+## Firebase tools でログイン
 
 ```
 $(npm bin)/firebase login
 ```
 
-### プロジェクトディレクトリを初期化
+## プロジェクトディレクトリを初期化
 
 ローカルディレクトリをデプロイ用に初期化
 
@@ -69,7 +30,7 @@ $(npm bin)/firebase init
 1. 今回作成したFirebaseプロジェクト名を選択
 1. 後はデフォルトでいいのでEnter連打
 
-#### 初期化時に作成されるファイル
+### 初期化時に作成されるファイル
 
 - .firebaserc
   - プロジェクトのメタデータ
@@ -83,14 +44,14 @@ $(npm bin)/firebase init
 - public/
   - Hostingされる静的ファイルを格納する用のディレクトリ
 
-### ビルド成果物出力先を調整
+## ビルド成果物出力先を調整
 
 webpackの設定を変更
 
 - webpack-dev-server.config.js
 - webpack-production.config.js
 
-### ビルド
+## ビルド
 
 ```
 npm run build
@@ -98,7 +59,7 @@ npm run build
 
 - `plublic/` に各種ファイルが出力されていることを確認
 
-### デプロイ
+## デプロイ
 
 ```
 $(npm bin)/firebase deploy
@@ -108,7 +69,9 @@ $(npm bin)/firebase deploy
 
 **お疲れ様でした！！**
 
-#### ※※※デプロイ時の注意！！！
+---
+
+## ※※※デプロイ時の注意！！！
 
 上記 `firebase deploy` コマンドはローカルの `./database.rules.json` でクラウド上のルールを **問答無用で上書き** します。
 データベースルールはセキュリティリスクがかなり高いです（とゆーかデータを守る唯一の手段です）。

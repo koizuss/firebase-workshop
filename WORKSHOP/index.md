@@ -16,7 +16,8 @@ TODOアプリの基本機能でFirebaseの基本的なデータI/O、セキュ�
   - https://speakerdeck.com/heki1224/firebase-authentication
 2. [タスク表示・追加・変更・削除](1-2_TASK.md)
 3. [完了チェック](1-3_COMPLETE.md)
-4. [セキュリティ設定・デプロイ](1-4_DEPLOY.md)
+4. [セキュリティ設定](1-4_SET_SEC.md)
+5. [デプロイ](1-5_DEPLOY.md)
 
 ---
 
