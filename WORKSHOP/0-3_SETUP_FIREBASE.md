@@ -10,7 +10,9 @@ Firebaseのセットアップ
 
 ## Firebase SDK インストール
 
-  npm i -S firebase
+```
+npm i -S firebase
+```
 
 > `npm i` = `npm install`
 
@@ -20,7 +22,7 @@ Firebaseのセットアップ
   - ![fb_setup_4](../images/fb_setup_4.png)
 1. init_firebase.js 作成
   - ↓理由からFirebaseの初期化処理を別ファイル化
-    − 初期化コードを公開するのを避ける
+    - 初期化コードを公開するのを避ける
       - init_firebase.js は `git ignore` しています
     - 環境の切り替えができるように
 1. app.js にインポート
