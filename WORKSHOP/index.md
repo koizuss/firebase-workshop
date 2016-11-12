@@ -18,26 +18,6 @@ TODOアプリの基本機能でFirebaseの基本的なデータI/O、セキュ�
 3. [完了チェック](1-3_COMPLETE.md)
 4. [セキュリティ設定・デプロイ](1-4_DEPLOY.md)
 
-### Ph-2 グループ
-
-複数エンティティにまたがるグループ単位でのセキュリティ設定を知る
-
-1. [グループ追加・削除](2-1_CREATE_GROUP.md)
-2. [グループの詳細表示](2-2_SHOW_GROUP_DETAIL.md)
-3. [グループ一覧表示](2-3_SHOW_GROUP_LIST.md)
-4. [グループ承認・取り消し](2-4_ACCEPT.md)
-  - パーマリンクでアクセス
-  - 未承認の場合承認依頼ボタン表示
-  - グループ詳細にメンバーリスト表示
-  - 承認＆取り消し
-
-### Ph-3 サブタスク
-
-条件を指定してデータを取得する方法を知る
-
-1. [サブタスク追加・変更・削除](3-1_CREATE_SUB_TASK.md)
-2. [サブタスク数表示](3-2_SHOW_SUB_TASK_COUNT.md)
-
 ---
 
 ## f/w・ライブラリ紹介
@@ -52,8 +32,6 @@ TODOアプリの基本機能でFirebaseの基本的なデータI/O、セキュ�
   - マテリアルデザインのReact実装
 - [React](https://facebook.github.io/react/)
   - http://uxmilk.jp/43555
-- [react-router](https://github.com/ReactTraining/react-router)
-
 
 ### for development
 
