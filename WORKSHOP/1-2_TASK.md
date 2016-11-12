@@ -1,6 +1,8 @@
 タスク表示・追加・変更・削除
 ==========================
 
+https://github.com/koizuss/firebase-todo/compare/1-1_LOGIN...1-2_TASK
+
 ## タスク表示・追加・変更・削除 UI調整
 
 > Material-UI・Reactの使い方がメイン
