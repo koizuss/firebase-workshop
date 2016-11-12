@@ -36,7 +36,7 @@ Firebaseの基本を知ってまずは *"使い始める"* ことができるよ
   1. [Firebaseの機能](#firebaseの機能)
 1. 概要説明
   1. [機能（やりたいこと）](#機能やりたいこと)
-  1. [ルール説明（repos/branchの使い方）](#ルール説明branchの使い方とか)
+  1. [ルール説明（repos/branchの使い方）](#ルール説明reposbranchの使い方)
 1. [Workshop](WORKSHOP/index.md)
 1. and more...
   1. Firebaseの弱点
